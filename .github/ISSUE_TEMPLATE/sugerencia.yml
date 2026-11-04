@@ -1,0 +1,30 @@
+name: Sugerencia
+description: Una idea o función que te gustaría en RomeroTune
+labels: ["sugerencia"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión de RomeroTune
+      placeholder: ej. 0.8.4 (Ayuda → Acerca de)
+  - type: dropdown
+    id: ecu
+    attributes:
+      label: ECU
+      options:
+        - SpeedTech / uaEFI
+        - rusEFI (otra placa)
+        - Speeduino
+        - Firmware MegaSquirt (MS2/Extra, MS3)
+        - Otra
+  - type: textarea
+    id: idea
+    attributes:
+      label: ¿Qué te gustaría?
+      description: Cuéntanos la idea y para qué te serviría.
+    validations:
+      required: true
+  - type: textarea
+    id: adjuntos
+    attributes:
+      label: Capturas o ejemplos (opcional)
