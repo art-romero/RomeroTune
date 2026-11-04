@@ -17,7 +17,7 @@ body:
         - SpeedTech / uaEFI
         - rusEFI (otra placa)
         - Speeduino
-        - Megasquirt2 y Megasquirt3
+        - Firmware MegaSquirt (MS2/Extra, MS3)
         - Otra
     validations:
       required: true
