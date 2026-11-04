@@ -1,0 +1,47 @@
+name: Reportar una falla
+description: Algo no funciona como debería en RomeroTune
+labels: ["falla"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión de RomeroTune
+      placeholder: ej. 1.2.3 (la ves en Ayuda → Acerca de)
+    validations:
+      required: true
+  - type: dropdown
+    id: ecu
+    attributes:
+      label: ECU
+      options:
+        - SpeedTech / uaEFI
+        - rusEFI (otra placa)
+        - Speeduino
+        - Otra
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Versión de Windows
+      placeholder: ej. Windows 11
+  - type: textarea
+    id: que_paso
+    attributes:
+      label: ¿Qué pasó?
+      description: Describe la falla y qué estabas haciendo cuando ocurrió.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para repetirla
+      placeholder: |
+        1. Conecté la ECU
+        2. Abrí la tabla VE
+        3. ...
+  - type: textarea
+    id: adjuntos
+    attributes:
+      label: Capturas, logs o archivo .msq
+      description: Arrastra aquí imágenes o archivos (puedes comprimirlos en .zip).
