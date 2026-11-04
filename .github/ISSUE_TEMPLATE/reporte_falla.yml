@@ -9,7 +9,7 @@ body:
       placeholder: ej. 1.2.3 (la ves en Ayuda → Acerca de)
     validations:
       required: true
-  -   - type: dropdown
+  - type: dropdown
     id: ecu
     attributes:
       label: ECU
@@ -17,8 +17,7 @@ body:
         - SpeedTech / uaEFI
         - rusEFI (otra placa)
         - Speeduino
-        - MegaSquirt (MS1 / MS2 / MS3)
-        - MegaSquirt2 y Megasquirt3
+        - Megasquirt2 y Megasquirt3
         - Otra
     validations:
       required: true
@@ -47,3 +46,5 @@ body:
     attributes:
       label: Capturas, logs o archivo .msq
       description: Arrastra aquí imágenes o archivos (puedes comprimirlos en .zip).
+     
+  
